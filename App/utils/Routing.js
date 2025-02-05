@@ -12,7 +12,7 @@ const Routing = () => {
                 <Stack.Screen
                     name="Gate"
                     component={Gate}
-                    options={{ headerShown: false }}  // This will remove the header entirely
+                    options={{ headerShown: false }}  
                 />
             </Stack.Navigator>
         </NavigationContainer>

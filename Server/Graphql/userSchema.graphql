@@ -1,0 +1,33 @@
+# schema/userSchema.graphql
+
+# User Type: Represents a user object
+type User {
+  id: ID!
+  name: String!
+  email: String!
+  token: String!
+}
+
+# Input for Signin: User will send email and password to sign in
+input SigninInput {
+  email: String!
+  password: String!
+}
+
+# Input for Signup: User will send name, email, and password to sign up
+input SignupInput {
+  name: String!
+  email: String!
+  password: String!
+}
+
+# Mutation for Signin (logs in a user and returns a User with token)
+type Mutation {
+  signin(input: SigninInput!): User!
+  signup(input: SignupInput!): User!
+}
+
+# Query to fetch user by ID (as an example)
+type Query {
+  getUser(id: ID!): User
+}
