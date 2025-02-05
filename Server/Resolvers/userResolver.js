@@ -25,7 +25,7 @@ const signin = async ({ email, password }) => {
     id: user.id,
     name: user.name,
     email: user.email,
-    token,
+    token, 
   };
 };
 
@@ -51,7 +51,7 @@ const signup = async ({ name, email, password }) => {
     id: newUser.id,
     name: newUser.name,
     email: newUser.email,
-    token,
+    token:token,
   };
 };
 

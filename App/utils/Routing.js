@@ -1,22 +1,15 @@
-import React from 'react'
-import { createStackNavigator } from '@react-navigation/stack'
-import { NavigationContainer } from '@react-navigation/native'  // Missing import
-import Gate from '../Screens/Gate/Gate'
+import React from "react";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Gate from "../Screens/Gate/Gate";
 
-const Stack = createStackNavigator()
+const Stack = createNativeStackNavigator();
 
 const Routing = () => {
     return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName="Gate">
-                <Stack.Screen
-                    name="Gate"
-                    component={Gate}
-                    options={{ headerShown: false }}  
-                />
-            </Stack.Navigator>
-        </NavigationContainer>
-    )
-}
+        <Stack.Navigator initialRouteName="Gate">
+            <Stack.Screen name="Gate" component={Gate} options={{ headerShown: false }} />
+        </Stack.Navigator>
+    );
+};
 
-export default Routing
+export default Routing;

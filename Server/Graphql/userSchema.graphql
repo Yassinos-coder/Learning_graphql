@@ -5,8 +5,9 @@ type User {
   id: ID!
   name: String!
   email: String!
-  token: String!
+  token: String!  
 }
+
 
 # Input for Signin: User will send email and password to sign in
 input SigninInput {
