@@ -1,0 +1,15 @@
+{
+  "name": "Server",
+  "version": "1.0.0",
+  "main": "core.js",
+  "author": "Yassinos-Coder",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.21.2",
+    "graphql": "^16.10.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.7"
+  }
+}
